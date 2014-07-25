@@ -4,7 +4,7 @@ This guide serves as an extension to the [Google JavaScript Style Guide](http://
 
 ## General conventions
 
-* All elements should use [seed-element](https://github.com/PolymerLabs/seed-element) as a starting point. This provides a clean base for authoring elements that are [reusable](http://www.polymer-project.org/docs/start/reusableelements.html).
+* All elements should use [seed-element](https://github.com/PolymerLabs/seed-element) as a starting point. This provides a clean base for authoring elements that are [reusable](http://www.polymer-project.org/docs/start/reusableelements.html). It includes a [component page](http://polymerlabs.github.io/seed-element) for documentation and a setup for [unit-testing](https://github.com/PolymerLabs/seed-element/tree/master/tests).
 * Where possible try to follow the [SRP](http://en.wikipedia.org/wiki/Single_responsibility_principle) (Single-responsibility principle) & [first](http://addyosmani.com/first) for elements you are authoring. “Do one thing and do it well”.
 * Extend existing elements over re-implementing functionality yourself. Alternatively, reuse base components (e.g. `<google-client-api>`) in your own.
 * Ensure your element, methods, events, attributes, and properties are well documented.
@@ -19,4 +19,13 @@ This guide serves as an extension to the [Google JavaScript Style Guide](http://
 * Elements should contain a dash in their name (e.g `<my-tabs>` vs `<tabs>`), per spec.
 * Google elements should be prefixed with “google” (e.g `<google-sheets`> vs `<g-sheets>`).
 * Where multiple words are required for the name, they should be separated with a dash (e.g `<google-street-view-pano>` vs `<google-streetviewpano>`) for readability.
-* Unless for private use, elements should use a unique name to avoid clashing with existing elements.
+* Unless for private use, elements should use a unique name to avoid clashing with [existing](https://github.com/GoogleWebComponents) elements.
+
+## Licensing
+
+Note, that this section is mostly relevant to Google engineers working on elements and follows current requirements around open-source projects.
+
+* As with other open source code that Google releases, use the Apache 2.0 license.
+* Include a [LICENSE](https://github.com/GoogleWebComponents/google-chart/blob/master/LICENSE) file at the top level of your project.
+* Include a copyright comment in your [demo.html](https://github.com/GoogleWebComponents/google-youtube/blob/master/demo.html#L2) file.
+* Include "license": "Apache2" in your [bower.json](https://github.com/GoogleWebComponents/google-youtube/blob/master/bower.json#L10).
