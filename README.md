@@ -1,14 +1,14 @@
-# Google Web Components Style Guide
+# Web Components Style Guide
 
-This guide serves as an extension to the [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml) with additional style guidance around authoring Web Components.
+This guide serves as an extension to the [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml) with additional style guidance around authoring Web Components. It is targeted at Google engineers, but may be useful for others too :)
 
 ## General conventions
 
 * All elements should use [seed-element](https://github.com/PolymerLabs/seed-element) as a starting point. This provides a clean base for authoring elements that are [reusable](http://www.polymer-project.org/docs/start/reusableelements.html). It includes a [component page](http://polymerlabs.github.io/seed-element) for documentation and a setup for [unit-testing](https://github.com/PolymerLabs/seed-element/tree/master/tests).
 * Where possible try to follow the [SRP](http://en.wikipedia.org/wiki/Single_responsibility_principle) (Single-responsibility principle) & [first](http://addyosmani.com/first) for elements you are authoring. “Do one thing and do it well”.
 * Extend existing elements over re-implementing functionality yourself. Alternatively, reuse base components (e.g. `<google-client-api>`) in your own.
-* Ensure your element, methods, events, attributes, and properties are well documented.
-* Use `@attribute`, `@property`, `@method`, `@event` to document the API for your element. [Example](http://googlewebcomponents.github.io/google-signin/components/google-signin/).
+* Ensure your element, methods, events, attributes, and properties are [well documented](http://googlewebcomponents.github.io/google-signin/components/google-signin/).
+* Use [@attribute](https://github.com/GoogleWebComponents/google-signin/blob/master/google-signin.html#L260), [@property](https://github.com/GoogleWebComponents/google-sheets/blob/master/google-sheets.html#L166), [@method](https://github.com/GoogleWebComponents/google-analytics/blob/master/google-analytics-base.html#L84), [@event](https://github.com/GoogleWebComponents/google-signin/blob/master/google-signin.html#L160) to document the API for your element. 
 * Ensure any styling hooks or accepted light DOM are documented in the element summary.
 * Follow the Web Component [best practices](http://webcomponents.org/articles/web-components-best-practices/) guide where possible.
 * Ensure your elements are [accessible](http://www.polymer-project.org/articles/accessible-web-components.html) from the get-go. 
