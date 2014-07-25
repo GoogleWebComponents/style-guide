@@ -16,16 +16,16 @@ This guide serves as an extension to the [Google JavaScript Style Guide](http://
 
 ## Naming
 
-* Elements should contain a dash in their name (e.g `<my-tabs>` vs `<tabs>`), per spec.
+* Elements should contain a dash in their name (e.g `<my-tabs>` vs `<tabs>`), per the Custom Element [specification](http://w3c.github.io/webcomponents/spec/custom/#concepts),
 * Google elements should be prefixed with “google” (e.g `<google-sheets`> vs `<g-sheets>`).
 * Where multiple words are required for the name, they should be separated with a dash (e.g `<google-street-view-pano>` vs `<google-streetviewpano>`) for readability.
 * Unless for private use, elements should use a unique name to avoid clashing with [existing](https://github.com/GoogleWebComponents) elements.
 
 ## Attributes
 
-* Published attributes will be camel cased where multiple words are in-use
-* Default property values in attributes are null. Provide sensible default values as part of your API if values will be bound and displayed anywhere in your template.
-* Use `@default` and `@required` for parameters that either have a default value or are required.
+* Published attributes should be camel-cased where multiple words are in use.
+* Provide sensible default values as part of your API if values will be bound and displayed anywhere in your template. Default property values in attributes are null.
+* Use [@default](https://github.com/GoogleWebComponents/google-signin/blob/master/google-signin.html#L252) and `@required` for parameters that either have a default value or are required.
 
 
 ## Events
