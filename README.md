@@ -2,7 +2,7 @@
 
 ## General conventions
 
-* Where possible try to follow the [SRP](http://en.wikipedia.org/wiki/Single_responsibility_principle (Single-responsibility principle) & [first](http://addyosmani.com/first) for elements you are authoring. “Do one thing and do it well”.
+* Where possible try to follow the [SRP](http://en.wikipedia.org/wiki/Single_responsibility_principle) (Single-responsibility principle) & [first](http://addyosmani.com/first) for elements you are authoring. “Do one thing and do it well”.
 * All elements should use [<seed-element>](https://github.com/PolymerLabs/seed-element) as a starting point.
 * Extend existing elements over re-implementing functionality yourself. Alternatively, reuse base components (e.g. `<google-client-api>`) in your own
 * Ensure your element, methods, events, attributes, and properties are well documented.
