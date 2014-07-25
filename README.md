@@ -8,7 +8,7 @@ This guide serves as an extension to the [Google JavaScript Style Guide](http://
 * Where possible try to follow the [SRP](http://en.wikipedia.org/wiki/Single_responsibility_principle) (Single-responsibility principle) & [first](http://addyosmani.com/first) for elements you are authoring. “Do one thing and do it well”.
 * Extend existing elements over re-implementing functionality yourself. Alternatively, reuse base components (e.g. `<google-client-api>`) in your own.
 * Ensure your element, methods, events, attributes, and properties are well documented.
-* Use `@attribute`, `@property`, `@method`, `@event`.
+* Use `@attribute`, `@property`, `@method`, `@event` to document the API for your element. [Example](http://googlewebcomponents.github.io/google-signin/components/google-signin/).
 * Ensure any styling hooks or accepted light DOM are documented in the element summary.
 * Follow the Web Component [best practices](http://webcomponents.org/articles/web-components-best-practices/) guide where possible.
 * Ensure your elements are [accessible](http://www.polymer-project.org/articles/accessible-web-components.html) from the get-go. 
