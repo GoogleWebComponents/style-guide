@@ -48,7 +48,7 @@ This guide serves as an extension to the [Google JavaScript Style Guide](http://
 
 ## Tests
 
-* `<seed-element>` has a setup using Mocha and Chai that should be adapted to exercise your own element’s functionality.
+* `<seed-element>` has a setup using Mocha and Chai that should be adapted to exercise your own element’s functionality. Examples of existing tests written by the Polymer team can be found in [core-tests](https://github.com/Polymer/core-tests).
 
 ## Licensing
 
