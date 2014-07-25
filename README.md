@@ -21,6 +21,12 @@ This guide serves as an extension to the [Google JavaScript Style Guide](http://
 * Where multiple words are required for the name, they should be separated with a dash (e.g `<google-street-view-pano>` vs `<google-streetviewpano>`) for readability.
 * Unless for private use, elements should use a unique name to avoid clashing with [existing](https://github.com/GoogleWebComponents) elements.
 
+## Attributes
+
+* Published attributes will be camel cased where multiple words are in-use
+* Default property values in attributes are null. Provide sensible default values as part of your API if values will be bound and displayed anywhere in your template.
+* Use `@default` and `@required` for parameters that either have a default value or are required.
+
 
 ## Events
 
@@ -28,8 +34,21 @@ This guide serves as an extension to the [Google JavaScript Style Guide](http://
 * It’s fine to simplify things a bit if your element name is complex, as long as the relationship is unambiguous (e.g., for a load event on a `<google-client-api-loader>` element, use `google-client-api-load` instead of `google-client-api-loader-load`).
 * A unique event name should be fired for unique actions in your element that will be of interest to the outside world.
 * Events should either end in verbs in the infinitive form (e.g. `google-client-api-load`) or nouns (e.g `google-drive-upload-success`).
-* Use declarative event handlers over JS based (e.g. don't write `addEventListener` in your element code)
+* Use declarative event handlers over JS based (e.g. don't write `addEventListener` in your element code).
 
+## Variables
+
+* Do not use $ to prepend your own object properties and variables. Consider this style of naming reserved for use by Polymer and jQuery. Polymer allows you to use `$.*` within `<template>` and `this.$.*` within script to access the content of element children.
+* Define constants outside of the `Polymer()` constructor, wrapped in an anonymous self-executing function.
+* If you need to define private or static variables, wrap your script using [standard techniques](http://www.polymer-project.org/docs/polymer/polymer.html#static) like anonymous self-calling functions.
+
+## Methods
+
+* Methods should be camel-cased where multiple verbs/words are in use (e.g `selectFile()` vs `selectfile()`).
+
+## Tests
+
+* `<seed-element>` has a setup using Mocha and Chai that should be adapted to exercise your own element’s functionality.
 
 ## Licensing
 
