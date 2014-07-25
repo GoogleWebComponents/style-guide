@@ -21,6 +21,16 @@ This guide serves as an extension to the [Google JavaScript Style Guide](http://
 * Where multiple words are required for the name, they should be separated with a dash (e.g `<google-street-view-pano>` vs `<google-streetviewpano>`) for readability.
 * Unless for private use, elements should use a unique name to avoid clashing with [existing](https://github.com/GoogleWebComponents) elements.
 
+
+## Events
+
+* Event names should have a prefix strongly related to the name of the element in use (e.g `drive-upload-success` vs `upload-succeeded`). This allows you to drop in multiple elements in the page without event namespacing clashing.
+* It’s fine to simplify things a bit if your element name is complex, as long as the relationship is unambiguous (e.g., for a load event on a `<google-client-api-loader>` element, use `google-client-api-load` instead of `google-client-api-loader-load`).
+* A unique event name should be fired for unique actions in your element that will be of interest to the outside world.
+* Events should either end in verbs in the infinitive form (e.g. `google-client-api-load`) or nouns (e.g `google-drive-upload-success`).
+* Use declarative event handlers over JS based (e.g. don't write `addEventListener` in your element code)
+
+
 ## Licensing
 
 Note, that this section is mostly relevant to Google engineers working on elements and follows current requirements around open-source projects.
