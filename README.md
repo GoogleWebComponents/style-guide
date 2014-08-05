@@ -50,6 +50,11 @@ This guide serves as an extension to the [Google JavaScript Style Guide](http://
 
 * `<seed-element>` has a setup using Mocha and Chai that should be adapted to exercise your own element’s functionality. Examples of existing tests written by the Polymer team can be found in [core-tests](https://github.com/Polymer/core-tests).
 
+## Assets
+
+* Assets such as icons, graphics and other forms of media should live inside an `assets` directory. One example of an element that does this is [yt-video](https://github.com/PolymerLabs/yt-video/tree/master/assets). 
+* Assets should be optimized (e.g using tools such as [ImageOptim](https://imageoptim.com/)) to minimize the size of resources package consumers need to download.
+
 ## Licensing
 
 Note, that this section is mostly relevant to Google engineers working on elements and follows current requirements around open-source projects.
