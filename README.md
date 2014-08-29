@@ -55,6 +55,14 @@ This guide serves as an extension to the [Google JavaScript Style Guide](http://
 * Assets such as icons, graphics and other forms of media should live inside an `assets` directory. One example of an element that does this is [yt-video](https://github.com/PolymerLabs/yt-video/tree/master/assets). 
 * Assets should be optimized (e.g using tools such as [ImageOptim](https://imageoptim.com/)) to minimize the size of resources package consumers need to download.
 
+## Polymer-specific recommendations
+
+* Where possible, use `on-tap` instead of `on-click` to benefit from additional help provided for touch screens
+* Avoid using the `<template>` tag inside `<table>`, `<select>` and other potentially problematic native elements documented in the [FAQ](http://www.polymer-project.org/resources/faq.html#option-tr).
+* Avoid excluding the outer `<template>` when attempting to use a conditional or repeat template
+* Avoid binding to native attributes that can cause issues. See the Polymer [data-binding](http://www.polymer-project.org/docs/polymer/databinding-compat.html#binding-to-attributes) docs for more information.
+* Be careful when placing content inside the `<shadow>` element. This will not render.
+
 ## Licensing
 
 Note, that this section is mostly relevant to Google engineers working on elements and follows current requirements around open-source projects.
