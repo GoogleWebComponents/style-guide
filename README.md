@@ -70,4 +70,4 @@ Note, that this section is mostly relevant to Google engineers working on elemen
 * As with other open source code that Google releases, use the Apache 2.0 license.
 * Include a [LICENSE](https://github.com/GoogleWebComponents/google-chart/blob/master/LICENSE) file at the top level of your project.
 * Include a copyright comment in your [demo.html](https://github.com/GoogleWebComponents/google-youtube/blob/master/demo.html#L2) file.
-* Include "license": "Apache2" in your [bower.json](https://github.com/GoogleWebComponents/google-youtube/blob/v0.0.4/bower.json#L16).
+* Include [`"license": "Apache-2.0"`](https://github.com/bower/bower.json-spec#license) in your [bower.json](https://github.com/GoogleWebComponents/google-youtube/blob/v0.0.4/bower.json#L16).
