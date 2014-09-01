@@ -1,6 +1,6 @@
 # Google Web Components Style Guide
 
-This guide serves as an extension to the [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml) with additional style guidance around authoring Web Components, particuarly those in this element collection. It is targeted at Google engineers, but may be useful for others too :)
+This guide serves as an extension to the [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml) with additional style guidance around authoring Web Components, particuarly those in [this](https://github.com/GoogleWebComponents/googlewebcomponents.github.io) element collection. It is targeted at Google engineers, but may be useful for others too :)
 
 ## General conventions
 
