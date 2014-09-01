@@ -1,6 +1,6 @@
-# Web Components Style Guide
+# Google Web Components Style Guide
 
-This guide serves as an extension to the [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml) with additional style guidance around authoring Web Components. It is targeted at Google engineers, but may be useful for others too :)
+This guide serves as an extension to the [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml) with additional style guidance around authoring Web Components, particuarly those in this element collection. It is targeted at Google engineers, but may be useful for others too :)
 
 ## General conventions
 
@@ -12,7 +12,7 @@ This guide serves as an extension to the [Google JavaScript Style Guide](http://
 * Ensure any styling hooks or accepted light DOM are documented in the element summary.
 * Follow the Web Component [best practices](http://webcomponents.org/articles/web-components-best-practices/) guide where possible.
 * Ensure your elements are [accessible](http://www.polymer-project.org/articles/accessible-web-components.html) from the get-go. 
-* In your bower.json, depend on a specific version of Polymer (e.g. "polymer": "Polymer/polymer#~0.3.4")
+* In your bower.json, depend on a specific version of Polymer (e.g. "polymer": "Polymer/polymer#~0.4.0")
 
 ## Naming
 
